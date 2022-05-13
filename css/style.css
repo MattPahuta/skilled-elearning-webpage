@@ -1,0 +1,123 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root {
+  /* colors */
+  --clr-blue: #666CA3;
+  --clr-dark: #13183F;
+  --clr-gray: #83869A;
+  --clr-dk-pink: #F74780;
+  --clr-lt-pink: #FFA7C3;
+  --clr-white: #FFFFFF;
+  /* gradients */
+  /* example - background: var(--bg-gadient-1); */
+  --bg-gradient-1: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+  --bg-gradient-2: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+
+  /* fonts 
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  */  
+  --ff-main: 'Plus Jakarta Sans', sans-serif;
+
+  /* font sizes */
+  /* Heading (XL) - 56px/70px line height */
+  --fs-heading-xl: 3.5rem;
+  /* Heading (L) - 40px/41px line height */
+  --fs-heading-lrg: 2.5rem;
+  /* Heading (M) - 32px/40px line height */
+  --fs-heading-med: 2rem;
+  /* Heading (S) - 24px/28px line height */
+  --fs-heading-sml: 1.5rem;
+  /* Body (M) - 18px/28px line height */
+  --fs-body-med: 1.125rem;
+  /* Body (S) - 16px/28px line height */
+  --fs-body-sml: 1rem;
+
+  /* line heights */
+  --lh-lrg: 4.375rem;
+  --lh-med: 2.5rem;
+  --lh-sml: 1.75rem;
+
+}
+
+
+/* ======================== */
+/* Reset and General Styles */
+/* ======================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-main);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--clr-white);
+  color: var(--clr-gray);
+}
+
+/* Utility Classes */
+
+@media (min-width: 760px) {
+  .container {
+    max-width: 1110px;
+  }
+}
+
+/* ========== */
+/* Typography */
+/* ========== */
+
+
+
+/* ========== */
+/* Components */
+/* ========== */
+
+button {
+  font-family: inherit;
+}
+
+.footer {
+  background: var(--clr-dark);
+}
+
+/* ============== */
+/* General Styles */
+/* ============== */
+
+/* courses section */
+.courses {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+}
