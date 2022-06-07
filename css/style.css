@@ -90,6 +90,10 @@ body {
   }
 }
 
+.flex {
+  display: flex;
+}
+
 /* ========== */
 /* Typography */
 /* ========== */
@@ -100,17 +104,75 @@ body {
 /* Components */
 /* ========== */
 
-button {
+.button {
   font-family: inherit;
+  font-size: var(--fs-body-med);
+  line-height: var(--lh-sml);
+  font-weight: 700;
+  color: var(--clr-white);
+  border: none;
+  cursor: pointer;
 }
 
-.footer {
+.btn-1,
+.btn-3 {
+  padding: 14px 32px;
+  border-radius: 28px;
+}
+
+.btn-1 {
   background: var(--clr-dark);
 }
+
+.btn-1:hover,
+.btn-1:focus {
+  background: var(--clr-blue);
+}
+
+.btn-2 {
+  padding: 19px 32px 16px;
+  border-radius: 31.5px;
+  background: var(--bg-gradient-1);
+}
+
+.btn-2:hover,
+.btn-2:focus {
+  background: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+    linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.btn-3 {
+  background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.btn-3:hover,
+.btn-3:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+
 
 /* ============== */
 /* General Styles */
 /* ============== */
+
+/* Header Styles */
+.header-container {
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  /* testing only */
+  margin-bottom: 175px;
+  border: 1px solid red;
+}
+
+
+.hero-pics {
+  max-width: 992px;
+}
+
 
 /* courses section */
 .courses {
@@ -118,6 +180,9 @@ button {
 }
 
 /* Footer */
+
 .footer {
   margin-top: auto;
+  background: var(--clr-dark);
 }
+
