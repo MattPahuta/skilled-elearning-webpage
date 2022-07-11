@@ -12,30 +12,52 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <header>
-    <div class="container flex header-container">
-      <div>
-        <img src="./assets/logo-dark.svg" alt="skilled logo" class="logo">
+  <header class="header">
+    <nav class="navigation">
+      <div class="container">
+        <div class="flex nav-items">
+          <img src="./assets/logo-dark.svg" alt="skilled logo" class="logo">
+          <a class="button btn-1">Get Started</a>
+        </div>
       </div>
-      <button class="button btn-1">Get Started</button>
+    </nav>
+    <div class="container hero">
+      <!-- hero text -->
+      <section class="hero-content">
+        <h1>Maximize skill, minimize budge</h1>
+        <p>Our modern courses across a range of in-demand skills will give you the 
+          knowledge you need to live the life you want.</p>
+          <!-- button or link? -->
+        <a class="button btn-2">Get Started</a>
+      </section>
+      <!-- hero image -->
+      <picture>
+				<source media="(min-width: 1400px)" srcset="./assets/image-hero-desktop@2x.webp">
+				<source media="(min-width: 1200px)" srcset="./assets/image-hero-desktop.webp">
+				<source media="(min-width: 992px)" srcset="./asset/image-hero-tablet@2x.webp">
+				<source media="(min-width: 768px)" srcset="./asset/image-hero-tablet.webp">
+				<source media="(min-width: 576px)" srcset="./asset/image-hero-mobile@2x.webp">
+				<img src="./assets/image-hero-mobile.webp"	alt="" class="hero-image">
+			</picture>
     </div>
   </header>
 
+
   <main>
  
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="hero-content">
         <h1>Maximize skill, minimize budge</h1>
         <p>Our modern courses across a range of in-demand skills will give you the 
           knowledge you need to live the life you want.</p>
-        <button class="button btn-2">Get Started</button>
+        <a class="button btn-2">Get Started</a>
       </div>
       <picture class="hero-pics">
         <source media="(min-width: 1200px)" srcset="./assets/image-hero-desktop@2x.png">
         <source media="(min-width: 620px)" srcset="./assets/image-hero-tablet@2x.png">
         <img src="./assets/image-hero-mobile@2x.png" alt="" class="hero-image">
       </picture>
-    </section>
+    </section> -->
 
     <section class="courses">
       <div class="container">
@@ -93,7 +115,7 @@
       <div>
         <img src="./assets/logo-light.svg" alt="" class="logo">
       </div>
-      <button class="button btn-3">Get Started</button>
+      <a class="button btn-3">Get Started</a>
     </div>
   </footer>
 

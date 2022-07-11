@@ -75,6 +75,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-main);
+  line-height: 1.1;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,9 +85,28 @@ body {
 
 /* Utility Classes */
 
-@media (min-width: 760px) {
+.container {
+  margin-inline: auto;
+  /* adjust padding values */
+  padding-inline: 1.6rem; 
+  max-width: 90em;
+}
+
+@media (min-width: 75em) {
   .container {
-    max-width: 1110px;
+    padding-inline: 16.5rem;
+  }
+}
+
+@media (min-width: 60em) {
+  .container {
+    padding-inline: 8rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding-inline: 4rem;
   }
 }
 
@@ -94,10 +114,13 @@ body {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 /* ========== */
 /* Typography */
 /* ========== */
-
 
 
 /* ========== */
@@ -105,6 +128,7 @@ body {
 /* ========== */
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-size: var(--fs-body-med);
   line-height: var(--lh-sml);
@@ -125,7 +149,7 @@ body {
 }
 
 .btn-1:hover,
-.btn-1:focus {
+.btn-1:active {
   background: var(--clr-blue);
 }
 
@@ -136,7 +160,7 @@ body {
 }
 
 .btn-2:hover,
-.btn-2:focus {
+.btn-2:active {
   background: 
     linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
     linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
@@ -147,7 +171,7 @@ body {
 }
 
 .btn-3:hover,
-.btn-3:focus {
+.btn-3:active {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
@@ -158,10 +182,24 @@ body {
 /* ============== */
 
 /* Header Styles */
-.header-container {
-  margin-inline: auto;
+.header {
+  /* check  need for this */
+  overflow: hidden;
+}
+
+.navigation {
+  padding-block: 2.5em;
+}
+
+.nav-items {
   justify-content: space-between;
   align-items: center;
+}
+
+.header-container {
+  /* margin-inline: auto;
+  justify-content: space-between;
+  align-items: center; */
 
   /* testing only */
   margin-bottom: 175px;
@@ -169,13 +207,59 @@ body {
 }
 
 
-.hero-pics {
-  max-width: 992px;
+@media (min-width: 48em) {
+  .navigation {
+    padding-block: 1.5em;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-right: 0;
+  }
 }
+
+@media (min-width: 60em) {
+  .hero {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+.hero-content {
+  max-width: 60ch;
+  /* check this value/unit */
+  padding-block: 2rem;
+}
+
+@media (min-width: 48em) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 48em) {
+  .hero-image {
+    /* adjust these values */
+    margin-top: 12.5rem;
+    position: relative;
+    z-index: -100;
+    max-width: 150%;
+  }
+}
+/* adjust media min-width value */
+@media (min-width: 75em) {
+  .hero-image {
+    margin-top: -25rem;
+  }
+}
+
 
 
 /* courses section */
 .courses {
+  /* temp padding for spacing */
+  padding-top: 250px;
   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%)
 }
 
