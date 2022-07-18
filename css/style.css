@@ -102,12 +102,12 @@ body {
   margin-inline: auto;
   /* adjust padding values */
   padding-inline: 1rem; 
-  max-width: 90em;
+  max-width: 72rem;
 }
 
 @media (min-width: 48em) {
   .container {
-    padding-inline: 4rem;
+    padding-inline: 2.5rem;
   }
 }
 
@@ -215,8 +215,6 @@ p {
 
 /* Header Styles */
 .header {
-  /* check  need for this */
-  overflow: hidden;
   padding-top: 1rem;
 }
 
@@ -239,6 +237,10 @@ p {
   border: 1px solid red;
 }
 
+.hero {
+  padding-top: 2.375rem;
+}
+
 @media (max-width: 48em) {
   .hero-image {
     margin-inline: auto;
@@ -247,12 +249,17 @@ p {
 
 
 @media (min-width: 48em) {
-  .navigation {
-    padding-block: 1.5em;
+  .header {
+    padding: 1.5rem 0 3rem 0;
   }
+
+  .navigation {
+    /* padding-block: 1.5em; */
+  }
+
   .hero {
     display: grid;
-    grid-template-columns: 6fr 6fr;
+    grid-template-columns: minmax(400px, 1fr) auto;
     padding-right: 0;
   }
 }
@@ -268,7 +275,7 @@ p {
 .hero-content {
   max-width: 60ch;
   /* check this value/unit */
-  padding-block: 2em;
+  /* padding-block: 2em; */
 }
 
 @media (min-width: 48em) {
@@ -278,16 +285,15 @@ p {
     justify-content: center;
     align-items: flex-start;
   }
-}
 
-@media (min-width: 48em) {
   .hero-image {
     /* adjust these values */
-    margin-top: 12.5rem;
+    margin-top: -7rem;
     position: relative;
     z-index: -100;
     max-width: 150%;
   }
+
 }
 /* adjust media min-width value */
 @media (min-width: 75em) {
@@ -308,10 +314,19 @@ p {
   row-gap: 2.5rem;
 }
 
+@media (min-width: 48em) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem .625rem;
+  }
+}
+
 .courses-header {
+  margin-bottom: 1.5em;
+  padding: 1.5em 2em;
   background: var(--bg-gradient-1);
   border-radius: .625rem;
-  padding: 1.5em 2em;
+
 }
 
 .courses-header h2 {
@@ -338,10 +353,12 @@ p {
 
 .course-overview p {
   margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .course-link {
   font-size: var(--fs-body-med);
+  line-height: 1.5;
   color: var(--clr-dk-pink);
   text-decoration: none;
 }
