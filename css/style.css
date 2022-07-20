@@ -191,6 +191,7 @@ p {
 
 .btn-1 {
   background: var(--clr-dark);
+  z-index: 1000;
 }
 
 
@@ -249,13 +250,7 @@ p {
 
 
 @media (min-width: 48em) {
-  .header {
-    padding: 1.5rem 0 3rem 0;
-  }
 
-  .navigation {
-    /* padding-block: 1.5em; */
-  }
 
   .hero {
     display: grid;
@@ -264,11 +259,7 @@ p {
   }
 }
 
-@media (min-width: 60em) {
-  .hero {
-    grid-template-columns: 5fr 7fr;
-  }
-}
+
 
 
 
@@ -291,10 +282,21 @@ p {
     margin-top: -7rem;
     position: relative;
     z-index: -100;
-    max-width: 150%;
+    /* max-width: 175%; */
+    object-fit: cover;
+    min-height: 600px;
+    left: 1.5rem;
   }
 
 }
+
+@media (min-width: 60em) {
+  .hero {
+    grid-template-columns: 5fr 7fr;
+  }
+
+}
+
 /* adjust media min-width value */
 @media (min-width: 75em) {
   .hero-image {
@@ -368,6 +370,15 @@ p {
   text-decoration: underline;
 }
 
+@media (min-width: 48em) {
+  .courses-header {
+    margin-bottom: 1.5em;
+    padding: 3.5em 2em 0;
+    background: var(--bg-gradient-1);
+    border-radius: .625rem;
+  
+  }
+}
 
 
 /* Footer */
