@@ -12,10 +12,9 @@
   /* gradients */
   --bg-gradient-1: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
   --bg-gradient-2: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
-  /* fonts 
-    font-family: 'Plus Jakarta Sans', sans-serif;
-  */  
+  /* font-family: 'Plus Jakarta Sans', sans-serif; */  
   --ff-main: 'Plus Jakarta Sans', sans-serif;
+
   /* font sizes */
   /* Heading (XL) - 56px/70px line height */
   --fs-heading-xl: 3.5rem;
@@ -31,12 +30,12 @@
   --fs-body-med: 1.125rem;
   /* Body (S) - 16px/28px line height */
   --fs-body-sml: 1rem;
-  /* line heights */
-  --lh-lrg: 4.375rem;
-  --lh-med: 2.5rem;
-  --lh-sml: 1.75rem;
-}
 
+  /* line heights */
+  --lh-lrg: 70px;
+  --lh-med: 40px;
+  --lh-sml: 26px;
+}
 
 /* ======================== */
 /* Reset and General Styles */
@@ -107,7 +106,6 @@ body {
   }
 }
 
-
 /* ========== */
 /* Typography */
 /* ========== */
@@ -136,11 +134,16 @@ p {
 
 .header-text {
   font-size: var(--fs-body-sml);
+  line-height: var(--lh-sml);
   margin-bottom: 1.75em;
-  /* max-width: 36ch; */
+  max-width: 36ch;
 }
 
-
+@media (min-width: 60em) {
+  .header-text {
+    max-width: 34ch;
+  }
+}
 
 @media (min-width: 75em) {
   .main-heading {
@@ -159,7 +162,7 @@ p {
 .button {
   display: inline-block;
   font-family: inherit;
-  /* font-size: var(--fs-body-med); */
+  font-size: var(--fs-body-med);
   line-height: var(--lh-sml);
   font-weight: 700;
   color: var(--clr-white);
@@ -202,7 +205,7 @@ p {
 
 /* Header Styles */
 .header {
-  padding-top: 1rem;
+  padding-top: 1em;
 }
 
 .nav-items {
@@ -211,7 +214,7 @@ p {
 }
 
 .hero {
-  padding-top: 2.375rem;
+  padding-top: 2.375em;
 }
 
 @media (max-width: 48em) {
@@ -245,7 +248,7 @@ p {
   }
 
   .hero-image {
-    margin-top: -30%;
+    margin-top: -36%;
     margin-left: -15%;
     max-width: 225%;
   }
