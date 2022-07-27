@@ -24,13 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./assets/Screenshot_Desktop_Skilled_e-learning.png "Desktop")
-![Mobile](./assets/Screenshot_Mobile_Skilled_e-learning.png "Mobile")
+![Tablet](./assets/Screenshot_Skilled_e-learning.png "Tablet view")
 
 
 ### Links
 
-- Solution URL: [Solution URL]()
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-and-flexbox-V7KfAAbdd6)
 - Live Site URL: [live site URL](https://skilled-elearning-webpage.vercel.app/)
 
 ## My process
